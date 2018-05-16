@@ -15,3 +15,12 @@ function calc() {
     }, 100);
   }
 }
+
+var input = document.getElementById("surd");
+
+input.addEventListener("keyup", function(event) {
+  event.preventDefault();
+  if (event.keyCode === 13) {
+    document.getElementById("submit").click();
+  }
+});
